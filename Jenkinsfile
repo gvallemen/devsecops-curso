@@ -21,12 +21,12 @@ pipeline {
       }
     }
     //****Checar llaves de archivo kubeconfig
-    /*stage('kubernetes version') {
+    stage('kubernetes version') {
       steps {
         withKubeConfig([credentialsId: 'kubeconfig']) {
           sh "kubectl version --short"
         }
       }
-    }*/
+    }
   }
 }
